@@ -36,63 +36,90 @@
 p.ex1{
   margin-left: 250px;
 }
-  </style>
-    </head>
-  </head>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Roulette Simulation</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <!-- Custom CSS -->
-  <style>
-    body {
-      background-color: #f8f9fa;
-    }
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Your Bootstrap Page</title>
 
-    .container {
-      margin-top: 50px;
-      text-align: center;
-    }
-
-    .result {
-      font-size: 24px;
-      font-weight: bold;
-      margin-top: 20px;
-    }
-  </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyklqO1kD0fpcFqAg54l/6pvoN9UnWKx1" crossorigin="anonymous">
+    
+    <!-- Your custom CSS -->
+    <style>
+        body {
+            padding-top: 56px; /* Adjust the padding-top based on your navbar height */
+        }
+    </style>
 </head>
 <body>
 
-<div class="container">
-  <h1 class="mb-4">Roulette Simulation</h1>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Your Brand</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-  <button class="btn btn-primary" onclick="rouletteSimulation()">Spin the Wheel</button>
+    <!-- Jumbotron Section -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-4">Welcome to Your Website</h1>
+            <p class="lead">This is a simple webpage template using HTML, CSS, and Bootstrap.</p>
+        </div>
+    </div>
 
-  <div id="outcome" class="result"></div>
-</div>
+    <!-- Card Section -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card 1</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card 2</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card 3</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<!-- Bootstrap JS and Popper.js -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-<!-- Custom JavaScript -->
-<script>
-  function rouletteSimulation() {
-    // Your MATLAB simulation logic can be added here
-
-    // For simplicity, let's just display a sample outcome
-    var outcomes = ['Red', 'Black', 'Green'];
-    var randomOutcome = outcomes[Math.floor(Math.random() * outcomes.length)];
-
-    // Display the outcome
-    var outcomeElement = document.getElementById('outcome');
-    outcomeElement.textContent = 'Outcome: ' + randomOutcome;
-    outcomeElement.className = 'result text-' + (randomOutcome === 'Green' ? 'danger' : randomOutcome.toLowerCase());
-  }
-</script>
+    <!-- Bootstrap JS and Popper.js (order is important) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46JEnD5c8GzJwC/R1WA6fVFUS6U4kpcpomI8tI4su1H" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyklqO1kD0fpcFqAg54l/6pvoN9UnWKx1" crossorigin="anonymous"></script>
 
 </body>
 </html>
