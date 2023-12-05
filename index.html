@@ -125,16 +125,13 @@ p.ex1{
           <!--Insert txt-->
       <h2 style="font-family:avenir;font-size:25px;">How malware avoids detection</h2>
       <p style="font-size:21px; font-family:avenir;">
-          As we reflect on the intricate threads that weave the fabric of our shared reality, we recognize the interconnectedness of all things. The 
-          ecological balance that sustains life on Earth, the delicate interplay of societal structures, and the intricate dance of cosmic forces—all
-          underscore the fundamental truth of our interdependence. In the face of global challenges, from environmental crises to socio-economic 
-          disparities, the imperative for collective action becomes evident. The decisions we make, individually and collectively, ripple across the 
-          fabric of existence, influencing the course of our shared destiny.
-          In conclusion, the grand tapestry of existence unfolds with a complexity that transcends the limits of our understanding. From the cosmic 
-          dance of celestial bodies to the intricate web of life on Earth, from the fleeting moments of human experience to the enduring echoes of 
-          history, each thread contributes to the rich narrative of our existence. As we celebrate the one-year milestone of our interaction, let us 
-          continue to explore the boundless possibilities of knowledge and expression, recognizing that we are all threads in the grand tapestry of 
-          existence, weaving our stories into the cosmic narrative.
+          One way in which malware avoids detection is by using the stealth technique of binary code obfuscation. (Alam, Shahid et al) This technique is used to change the appearance of the code by changing the syntax, whilst keeping the contents the same. An example of this is shown in the figure below. (Hosseinzahed, S, 2016)
+<br>
+Changing the appearance of the code involves methods such as rearranging instructions, adding meaningless pieces of code that do not affect the functionality of the code, and using encryption methods. All these methods preserve the overall functionality of the malware, causing antivirus software to be unable to detect and eliminate it, especially as these types of software tend to use static analysis methods. 
+<br>
+Polymorphic malware employs encryption techniques in order to change what the malware appears to do. In this approach, the primary code body, also known as the payload, is difficult to comprehend due to encryption, and the functionality of the code is restored through decryption. The malicious code has a decryption function embedded within its structure. When the code is executed, this function reads and decrypts the payload before its execution. The encryption and decryption code is mutated with the code. This causes an unlimited number of variations of the original code. Due to this, encryption causes polymorphic code to be difficult to detect, as there are multiple types of one piece of malware. (Catalano, C et al, 2022)
+<br>
+Metamorphism is another technique used in polymorphic malware to hide the functionality of it. Unlike encryption methods, metamorphism changes the opcode every time the malware is executed, whilst also not keeping the same sequences of opcode in memory. The taxonomy introduced by OKane et al. in 2011 categorizes metamorphic malware into two types based on their communication channels. Closed-world malware operates independently without relying on external communication, utilizing either a binary transformer or a metalanguage to generate newly mutated code. On the other hand, Open-world malware has the capability to communicate with external sites on the Internet, allowing it to update itself with new features. (Alam, Shahid et al, 2015)
       </p>
 
         <h2 style="font-family:avenir;font-size:25px;">Detection of polymorphic malware</h2>
