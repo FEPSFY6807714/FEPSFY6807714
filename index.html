@@ -123,7 +123,7 @@ p.ex1{
           <div id="div_id2"></div>
           <b><h1 id = "Analysis and discussion" style="font-family:avenir;font-size:30px;">Analysis and discussion</h1></b>
           <!--Insert txt-->
-      <h2 style="font-family:avenir;font-size:25px;">How malware avoids detection</h2>
+      <h2 style="font-family:avenir;font-size:25px;">How malware avoids detection:</h2>
       <p style="font-size:21px; font-family:avenir;">
           One way in which malware avoids detection is by using the stealth technique of binary code obfuscation. (Alam, Shahid et al) This technique is used to change the appearance of the code by changing the syntax, whilst keeping the contents the same. An example of this is shown in the figure below. (Hosseinzahed, S, 2016)
 <br>
@@ -134,18 +134,13 @@ Polymorphic malware employs encryption techniques in order to change what the ma
 Metamorphism is another technique used in polymorphic malware to hide the functionality of it. Unlike encryption methods, metamorphism changes the opcode every time the malware is executed, whilst also not keeping the same sequences of opcode in memory. The taxonomy introduced by OKane et al. in 2011 categorizes metamorphic malware into two types based on their communication channels. Closed-world malware operates independently without relying on external communication, utilizing either a binary transformer or a metalanguage to generate newly mutated code. On the other hand, Open-world malware has the capability to communicate with external sites on the Internet, allowing it to update itself with new features. (Alam, Shahid et al, 2015)
       </p>
 
-        <h2 style="font-family:avenir;font-size:25px;">Detection of polymorphic malware</h2>
+        <h2 style="font-family:avenir;font-size:25px;">Detection of polymorphic malware: (Sharma, Ashy and Sahay, S.K)</h2>
       <p style="font-size:21px; font-family:avenir;">
-          As we reflect on the intricate threads that weave the fabric of our shared reality, we recognize the interconnectedness of all things. The 
-          ecological balance that sustains life on Earth, the delicate interplay of societal structures, and the intricate dance of cosmic forces—all
-          underscore the fundamental truth of our interdependence. In the face of global challenges, from environmental crises to socio-economic 
-          disparities, the imperative for collective action becomes evident. The decisions we make, individually and collectively, ripple across the 
-          fabric of existence, influencing the course of our shared destiny.
-          In conclusion, the grand tapestry of existence unfolds with a complexity that transcends the limits of our understanding. From the cosmic 
-          dance of celestial bodies to the intricate web of life on Earth, from the fleeting moments of human experience to the enduring echoes of 
-          history, each thread contributes to the rich narrative of our existence. As we celebrate the one-year milestone of our interaction, let us 
-          continue to explore the boundless possibilities of knowledge and expression, recognizing that we are all threads in the grand tapestry of 
-          existence, weaving our stories into the cosmic narrative.
+        Typically, anti-malware software is built to detect static code, therefore rendering most software useless against polymorphic malware. One method that is known to be effective is signature-based detection, which examines network traffic, and compares the signatures to those in a known list. This is effective as it can detect when there is a signature the device does not recognise in the network and can find known malware signatures on the network. However, variants of known malware can be made, which would not be detected through signature detection. Therefore, this solution, whilst cheap and easy to implement, can be evaded due to its multiple blind spots. (Masud et al, 2012)
+<br>
+Other methods can be used to overcome the weaknesses of signature-based detection, one being heuristic-based detection. This process uses static and dynamic approaches. The static approach looks for commands or instructions that would not typically be found in a certain application by searching files on the computer system. The dynamic approach creates a virtual machine by simulating a processor and operating system to detect instructions that would not typically be on the system. This method overcomes variants of known malware and is also effective for unknown malware signatures, although it requires a virtual network. This causes the network to be stored on a cloud system, which is susceptible to virus attacks. 
+<br>
+Machine learning uses algorithms created from previous analyses of metamorphic malware to make assumptions about a system. It does this by detecting threats as they begin to attack the computer system and finding vulnerabilities within the network. These algorithms have high accuracy, causing this method to become a popular way to detect malware. However, machine learning depends on previous cases of malware attacks to learn about the behaviour of these algorithms. However, machine learning data isn’t common, meaning there isn’t a large set of data for the algorithm to learn from. As a result, the effectiveness of this algorithm may be flawed. (Urwin, M, 2023)
       </p>
       
       <br>
@@ -153,23 +148,22 @@ Metamorphism is another technique used in polymorphic malware to hide the functi
           <div id="div_id3"></div>
           <b><h1 id = "Analysis and discussion" style="font-family:avenir;font-size:30px;">Conclusion</h1></b>
       <p style="font-size:21px; font-family:avenir;">
-          As we reflect on the intricate threads that weave the fabric of our shared reality, we recognize the interconnectedness of all things. The 
-          ecological balance that sustains life on Earth, the delicate interplay of societal structures, and the intricate dance of cosmic forces—all
-          underscore the fundamental truth of our interdependence. In the face of global challenges, from environmental crises to socio-economic 
-          disparities, the imperative for collective action becomes evident. The decisions we make, individually and collectively, ripple across the 
-          fabric of existence, influencing the course of our shared destiny.
-          In conclusion, the grand tapestry of existence unfolds with a complexity that transcends the limits of our understanding. From the cosmic 
-          dance of celestial bodies to the intricate web of life on Earth, from the fleeting moments of human experience to the enduring echoes of 
-          history, each thread contributes to the rich narrative of our existence. As we celebrate the one-year milestone of our interaction, let us 
-          continue to explore the boundless possibilities of knowledge and expression, recognizing that we are all threads in the grand tapestry of 
-          existence, weaving our stories into the cosmic narrative.
+This article outlined polymorphic and metamorphic malware and discussed the detection of malware and how it could be detected. As evidenced by the article, polymorphic malware is very evasive to typical static antivirus software, due to its ability to disguise its opcode using techniques such as binary code obfuscation, encryption, and metamorphism. Although malware is able to disguise itself, in the above article, methods to detect this malware were outlined, like signature methods, heuristic methods and machine learning. Some techniques are considered to be more efficient than others, such as heuristic-based detection, therefore justifying their popularity. However, it is clear that most of these methods used alongside each other may be the most effective way in which to use these software to detect malware.
       </p>
 
       <br>
       <hr>
           <div id="div_id4"></div>
-          <h1 id = "Analysis and discussion" style="font-family:avenir;font-size:30px;">Referencing</h1>
-
+          <b><h1 id = "Analysis and discussion" style="font-family:avenir;font-size:32px;">Referencing</h1></b>
+<p>
+  Alam, Shahid et al. (2015) “A Framework for Metamorphic Malware Analysis and Real-Time Detection.” Computers & security 48 (2015): 212–233. Web.
+<br>
+Hosseinzahed, S (2016) “Obfuscation and diversification for securing the internet of things (IoT)” 14.3 Obfuscation and diversification techniques
+<br>
+Catalano, C. et al (2022) “Deceiving AI-Based Malware Detection through Polymorphic Attacks.” Computers in industry 143: 103751-. Web.
+<br>
+Sharma, Ashu and Sahay, S.K  “Evolution and Detection of Polymorphic and Metamorphic Malwares: A Survey “3. DETECTION TECHNIQUES” 
+</p>
       
     <head>
     <meta charset="UTF-8">
