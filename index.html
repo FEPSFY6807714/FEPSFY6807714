@@ -89,7 +89,11 @@ p.ex1{
       <hr>
       <p class = "ex1">
           <div id="div_id"></div>
-          <b><h1 id = "Abstract" style="font-family:avenir;font-size:30px;">Abstract</h1></b>
+          <b>
+            <u>
+            <h1 id = "Abstract" style="font-family:avenir;font-size:30px;">Abstract</h1>
+            </u>
+          </b>
           <!--Insert txt-->
           <p style="font-size:21px; font-family:avenir;">
           This article explores features of polymorphic malware, and the techniques it uses to dynamically alter its code structures to
@@ -106,7 +110,11 @@ p.ex1{
           <div id="div_id1"></div>
       <br>
       <hr>
-          <b><u><h1 id = "Introduction" style="font-family:avenir;font-size:30px;">Introduction</h1></u></b>
+          <b>
+            <u>
+            <h1 id = "Introduction" style="font-family:avenir;font-size:30px;">Introduction</h1>
+            </u>
+          </b>
           <!--Insert txt-->
           <p style="font-size:21px; font-family:avenir;">
           Malware, or malicious software, is characterised by hostile software, typically intended to gain unauthorised access to a computer software.
@@ -122,9 +130,15 @@ p.ex1{
       <br>
       <hr>
           <div id="div_id2"></div>
-          <b><u><h1 id = "Analysis and discussion" style="font-family:avenir;font-size:30px;">Analysis and discussion</h1></u></b>
+          <b>
+            <u>
+              <h1 id = "Analysis and discussion" style="font-family:avenir;font-size:30px;">Analysis and discussion</h1>
+            </u>
+          </b>
           <!--Insert txt-->
-      <h2 style="font-family:avenir;font-size:25px;">How malware avoids detection:</h2>
+      <b>
+        <h2 style="font-family:avenir;font-size:25px;">How malware avoids detection:</h2>
+      </b>
       <p style="font-size:21px; font-family:avenir;">
           One way in which malware avoids detection is by using the stealth technique of binary code obfuscation. (Alam, Shahid et al) This technique is used to change the appearance of the code by changing the syntax, whilst keeping the contents the same. An example of this is shown in the figure below (Figure 1). (Hosseinzahed, S, 2016)
       </p>
@@ -146,7 +160,9 @@ Polymorphic malware employs encryption techniques in order to change what the ma
 Metamorphism is another technique used in polymorphic malware to hide the functionality of it. Unlike encryption methods, metamorphism changes the opcode every time the malware is executed, whilst also not keeping the same sequences of opcode in memory. Metamorphic malware is typically categotised into two types based on their communication channels. Closed-world malware operates independently without relying on external communication, utilizing either a binary transformer or a metalanguage to generate newly mutated code. On the other hand, Open-world malware has the capability to communicate with external sites on the Internet, allowing it to update itself with new features. (Alam, Shahid et al, 2015)
       </p>
 
+      <b>
         <h2 style="font-family:avenir;font-size:25px;">Detection of polymorphic malware: (Sharma, Ashy and Sahay, S.K)</h2>
+      </b>
       <p style="font-size:21px; font-family:avenir;">
         Typically, anti-malware software is built to detect static code, therefore rendering most software useless against polymorphic malware. One method that is known to be effective is signature-based detection, which examines network traffic, and compares the signatures to those in a known list. This is effective as it can detect when there is a signature the device does not recognise in the network and can find known malware signatures on the network. However, variants of known malware can be made, which would not be detected through signature detection. Therefore, this solution, whilst cheap and easy to implement, can be evaded due to its multiple blind spots. (Masud et al, 2012)
 <br>
