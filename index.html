@@ -127,7 +127,9 @@ p.ex1{
       <h2 style="font-family:avenir;font-size:25px;">How malware avoids detection:</h2>
       <p style="font-size:21px; font-family:avenir;">
           One way in which malware avoids detection is by using the stealth technique of binary code obfuscation. (Alam, Shahid et al) This technique is used to change the appearance of the code by changing the syntax, whilst keeping the contents the same. An example of this is shown in the figure below. (Hosseinzahed, S, 2016)
-<br>
+      </p>
+      <img src="Figure1.png" alt="Figure1" width="900" height="300">
+      <p style="font-size:21px; font-family:avenir;">
 Changing the appearance of the code involves methods such as rearranging instructions, adding meaningless pieces of code that do not affect the functionality of the code, and using encryption methods. All these methods preserve the overall functionality of the malware, causing antivirus software to be unable to detect and eliminate it, especially as these types of software tend to use static analysis methods. 
 <br>
 Polymorphic malware employs encryption techniques in order to change what the malware appears to do. In this approach, the primary code body, also known as the payload, is difficult to comprehend due to encryption, and the functionality of the code is restored through decryption. The malicious code has a decryption function embedded within its structure. When the code is executed, this function reads and decrypts the payload before its execution. The encryption and decryption code is mutated with the code. This causes an unlimited number of variations of the original code. Due to this, encryption causes polymorphic code to be difficult to detect, as there are multiple types of one piece of malware. (Catalano, C et al, 2022)
