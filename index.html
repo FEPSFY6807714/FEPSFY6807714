@@ -154,13 +154,13 @@ p.ex1{
       <br>
       
       <p style="font-size:21px; font-family:arial;">
-Changing the appearance of the code involves methods such as rearranging instructions, adding meaningless pieces of code that do not affect the functionality of the code, and using encryption methods. All these methods preserve the overall functionality of the malware, causing antivirus software to be unable to detect and eliminate it, especially as these types of software tend to use static analysis methods. 
-<br>
-<br>
-Polymorphic malware employs encryption techniques in order to change what the malware appears to do. In this approach, the primary code body, also known as the payload, is difficult to comprehend due to encryption, and the functionality of the code is restored through decryption. The malicious code has a decryption function embedded within its structure. When the code is executed, this function reads and decrypts the payload before its execution. The encryption and decryption code is mutated with the code. This causes an unlimited number of variations of the original code. Due to this, encryption causes polymorphic code to be difficult to detect, as there are multiple types of one piece of malware. <a href="#div_id4">(Catalano, C et al, 2022)</a>
-<br>
-<br>
-Metamorphism is another technique used in polymorphic malware to hide the functionality of it. Unlike encryption methods, metamorphism changes the opcode every time the malware is executed, whilst also not keeping the same sequences of opcode in memory. Metamorphic malware is typically categotised into two types based on their communication channels. Closed-world malware operates independently without relying on external communication, utilizing either a binary transformer or a metalanguage to generate newly mutated code. On the other hand, Open-world malware has the capability to communicate with external sites on the Internet, allowing it to update itself with new features. <a href="#div_id4">(Alam, Shahid et al, 2015)</a>
+        Changing the appearance of the code involves methods such as rearranging instructions, adding meaningless pieces of code that do not affect the functionality of the code, and using encryption methods. All these methods preserve the overall functionality of the malware, causing antivirus software to be unable to detect and eliminate it, especially as these types of software tend to use static analysis methods. 
+        <br>
+        <br>
+        Polymorphic malware employs encryption techniques in order to change what the malware appears to do. In this approach, the primary code body, also known as the payload, is difficult to comprehend due to encryption, and the functionality of the code is restored through decryption. The malicious code has a decryption function embedded within its structure. When the code is executed, this function reads and decrypts the payload before its execution. The encryption and decryption code is mutated with the code. This causes an unlimited number of variations of the original code. Due to this, encryption causes polymorphic code to be difficult to detect, as there are multiple types of one piece of malware. <a href="#div_id4">(Catalano, C et al, 2022)</a>
+        <br>
+        <br>
+        Metamorphism is another technique used in polymorphic malware to hide the functionality of it. Unlike encryption methods, metamorphism changes the opcode every time the malware is executed, whilst also not keeping the same sequences of opcode in memory. Metamorphic malware is typically categotised into two types based on their communication channels. Closed-world malware operates independently without relying on external communication, utilizing either a binary transformer or a metalanguage to generate newly mutated code. On the other hand, Open-world malware has the capability to communicate with external sites on the Internet, allowing it to update itself with new features. <a href="#div_id4">(Alam, Shahid et al, 2015)</a>
       </p>
 
       <b>
@@ -168,12 +168,12 @@ Metamorphism is another technique used in polymorphic malware to hide the functi
       </b>
       <p style="font-size:21px; font-family:arial;">
         Typically, anti-malware software is built to detect static code, therefore rendering most software useless against polymorphic malware. One method that is known to be effective is signature-based detection, which examines network traffic, and compares the signatures to those in a known list. This is effective as it can detect when there is a signature the device does not recognise in the network and can find known malware signatures on the network. However, variants of known malware can be made, which would not be detected through signature detection. Therefore, this solution, whilst cheap and easy to implement, can be evaded due to its multiple blind spots. <a href="#div_id4">(Masud et al, 2012)</a>
-<br>
-<br>
-Other methods can be used to overcome the weaknesses of signature-based detection, one being heuristic-based detection. This process uses static and dynamic approaches. The static approach looks for commands or instructions that would not typically be found in a certain application by searching files on the computer system. The dynamic approach creates a virtual machine by simulating a processor and operating system to detect instructions that would not typically be on the system. This method overcomes variants of known malware and is also effective for unknown malware signatures, although it requires a virtual network. This causes the network to be stored on a cloud system, which is susceptible to virus attacks. 
-<br>
-<br>
-Machine learning uses algorithms created from previous analyses of metamorphic malware to make assumptions about a system. It does this by detecting threats as they begin to attack the computer system and finding vulnerabilities within the network. These algorithms have high accuracy, causing this method to become a popular way to detect malware. However, machine learning depends on previous cases of malware attacks to learn about the behaviour of these algorithms. However, machine learning data isn’t common, meaning there isn’t a large set of data for the algorithm to learn from. As a result, the effectiveness of this algorithm may be flawed. <a href="#div_id4"> (Urwin, M, 2023) </a>
+        <br>
+        <br>
+        Other methods can be used to overcome the weaknesses of signature-based detection, one being heuristic-based detection. This process uses static and dynamic approaches. The static approach looks for commands or instructions that would not typically be found in a certain application by searching files on the computer system. The dynamic approach creates a virtual machine by simulating a processor and operating system to detect instructions that would not typically be on the system. This method overcomes variants of known malware and is also effective for unknown malware signatures, although it requires a virtual network. This causes the network to be stored on a cloud system, which is susceptible to virus attacks. 
+        <br>
+        <br>
+        Machine learning uses algorithms created from previous analyses of metamorphic malware to make assumptions about a system. It does this by detecting threats as they begin to attack the computer system and finding vulnerabilities within the network. These algorithms have high accuracy, causing this method to become a popular way to detect malware. However, machine learning depends on previous cases of malware attacks to learn about the behaviour of these algorithms. However, machine learning data isn’t common, meaning there isn’t a large set of data for the algorithm to learn from. As a result, the effectiveness of this algorithm may be flawed. <a href="#div_id4"> (Urwin, M, 2023) </a>
       </p>
       
       <br>
